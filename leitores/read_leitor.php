@@ -6,7 +6,7 @@ $sql = "SELECT nome, email, telefone FROM leitores;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
-    echo '<div class="leitores-container">';
+    echo '<div class="container">';
     while($row = $result->fetch_assoc()) {
         echo '<div class="leitores-box">';
         echo '

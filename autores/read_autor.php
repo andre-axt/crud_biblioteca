@@ -6,7 +6,7 @@ $sql = "SELECT nome, nacionalidade, ano_nascimento FROM autores;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
-    echo '<div class="autores-container">';
+    echo '<div class="container">';
     while($row = $result->fetch_assoc()) {
         echo '<div class="autores-box">';
         echo '

@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Leitores</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="email" name="email" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="date" name="telefone" required>
+        <input type="text" name="telefone" required>
 
         <input type="submit" value="Adicionar">
 

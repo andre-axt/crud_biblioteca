@@ -16,7 +16,7 @@ create table livros (
     genero varchar(45) not null,
     ano_publicacao date not null,
     fk_autor int,
-    foreign key (fk_autor) references id_autor(autores)
+    foreign key (fk_autor) references id_autor(autores) on delete cascate on update cascate
 
 );
 
@@ -34,8 +34,8 @@ create table emprestimos (
     fk_leitor int,
     data_emprestimo date not null,
     data_devolucao date not null,
-    foreign key (fk_livro) REFERENCES livros(id_livro),
-    foreign key (fk_leitor) REFERENCES leitores(id_leitor),
+    foreign key (fk_livro) REFERENCES livros(id_livro) on delete cascate on update cascate,
+    foreign key (fk_leitor) REFERENCES leitores(id_leitor) on delete cascate on update cascate,
 )
 
 

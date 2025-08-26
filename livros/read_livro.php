@@ -6,7 +6,7 @@ $sql = "SELECT titulo, genero, ano_publicacao, fk_autor FROM livros;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
-    echo '<div class="livros-container">';
+    echo '<div class="container">';
     while($row = $result->fetch_assoc()) {
         echo '<div class="livros-box">';
         echo '
